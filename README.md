@@ -1,16 +1,14 @@
-# Medical Expense Predictor
+# Medical Insurance Cost Predictor
 <br/>
 
-This project predicts the Medical expenses of an individual. 
+This project predicts the Medical Insurance cost of an individual. 
 
 The model predicts the cost by taking into account the age of the person, gender, bmi, 
 the number of children and whether the individual smokes or not.
 <br/>
 <br/>
 ### Why this Dataset?
-I have chosen this dataset as predicting the medical costs of an individual
-will help insurance companies choose their prices. Also, the individual will get an idea about how much
-it will cost him for treatments etc and plan his finances accordingly.
+I have chosen this dataset as predicting the medical insurance costs of an individual will help insurance companies choose their prices, banks to issue loans accordingly and also, the individual will get an idea about how much it will cost him for an insurance and plan his finances accordingly.
 <br/>
 <br/>
 ### Algorithm Used
