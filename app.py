@@ -52,15 +52,6 @@ y = np.asanyarray(test[['charges']])
 print('Variance score: %.2f' % regr.score(x, y))
 
 
-# a = float(input("enter age "))
-# b = float(input("enter 1 for female and 2 for male "))
-# c = float(input("enter no. of children "))
-# d = float(input("enter bmi "))
-# e = float(input("enter 0 for non smoker and 1 for smoker "))
-
-# y_hat = regr.predict(np.asanyarray([[a, b, c, d, e]]))
-# print(y_hat)
-
 # creating the ui using tkinter
 
 
