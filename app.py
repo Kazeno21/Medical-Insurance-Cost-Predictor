@@ -7,7 +7,7 @@ import numpy as np
 
 
 df = pd.read_csv(
-    "~/Documents/ML/Medical Insurance Cost Predictor/insurance.csv")
+    "insurance.csv")
 
 # replaced the strings in datasets with some values
 df = df.replace('female', 1)
@@ -59,7 +59,7 @@ fields = 'Age', 'Sex (1 for female and 2 for male)', 'Children', 'Bmi', 'Smoker 
 
 arr = []
 
-
+#fetching data from user and adding them to the array "arr"
 def fetch(entries):
     for entry in entries:
         field = entry[0]
@@ -71,7 +71,7 @@ def fetch(entries):
     w = tk.Label(root, text=t)
     w.pack()
 
-
+#creating GUI in tkinter
 def makeform(root, fields):
     root.title("Medical Insurance Cost Predictor")
     entries = []
@@ -85,12 +85,12 @@ def makeform(root, fields):
         entries.append((field, ent))
     return entries
 
-
+#predicting the cost
 def output(arr):
     y_hat = regr.predict(np.asanyarray([arr]))
     return y_hat[0]
 
-
+#main loop
 if __name__ == "__main__":
     root = tk.Tk()
 
